@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f53f0e82f7bef439bf73cb455ad896, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  gold: 0
+  monsters:
+  - monsterType: 0
+    prefab: {fileID: 7832732126989984907, guid: 6da61522ba97fea4ba356af8af8594ee, type: 3}
+    price: 0
+    isBought: 1
+    isUsing: 0
+  - monsterType: 1
+    prefab: {fileID: 7832732126989984907, guid: a7c93e0e1b1b870489a401589c939a93, type: 3}
+    price: 0
+    isBought: 1
+    isUsing: 0
+  - monsterType: 3
+    prefab: {fileID: 7832732126989984907, guid: ff54fabbfd3a9db439703b0ac01e7546, type: 3}
+    price: 0
+    isBought: 0
+    isUsing: 0
+  - monsterType: 2
+    prefab: {fileID: 7832732126989984907, guid: 714028cbdc7b84d46b934261c764fddc, type: 3}
+    price: 0
+    isBought: 0
+    isUsing: 0
+  currentMonsterIndex: 0
