@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33f53f0e82f7bef439bf73cb455ad896, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  gold: 0
+  gold: 100
   monsters:
   - monsterType: 0
     prefab: {fileID: 7832732126989984907, guid: 6da61522ba97fea4ba356af8af8594ee, type: 3}
@@ -21,17 +21,17 @@ MonoBehaviour:
     isUsing: 0
   - monsterType: 1
     prefab: {fileID: 7832732126989984907, guid: a7c93e0e1b1b870489a401589c939a93, type: 3}
-    price: 0
-    isBought: 1
+    price: 300
+    isBought: 0
     isUsing: 0
   - monsterType: 3
     prefab: {fileID: 7832732126989984907, guid: ff54fabbfd3a9db439703b0ac01e7546, type: 3}
-    price: 0
+    price: 400
     isBought: 0
     isUsing: 0
   - monsterType: 2
     prefab: {fileID: 7832732126989984907, guid: 714028cbdc7b84d46b934261c764fddc, type: 3}
-    price: 0
+    price: 300
     isBought: 0
     isUsing: 0
   currentMonsterIndex: 0

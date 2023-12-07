@@ -20,17 +20,66 @@ MonoBehaviour:
     playerSpawnPosition: {x: -7.5, y: -3.5}
     isCompleted: 0
     isPlayable: 1
-  - map: {fileID: 935813471044401573, guid: b86be72592582c747b6783e7c6c89f14, type: 3}
+  - map: {fileID: 8589780569940985139, guid: b86be72592582c747b6783e7c6c89f14, type: 3}
     line: {fileID: 3623110726292100459, guid: 5767ee8ccb79e4a4c825dcc3020ea2e4, type: 3}
-    lineStart: {x: -2, y: 0, z: -5}
-    lineEnd: {x: 2, y: 0, z: -5}
+    lineStart: {x: -6, y: -1, z: -5}
+    lineEnd: {x: -4, y: -1, z: -5}
     playerSpawnPosition: {x: -7.5, y: -0.5}
     isCompleted: 0
-    isPlayable: 1
+    isPlayable: 0
   - map: {fileID: 8887825055794278459, guid: fbf0980388f82654dab4644cee85039d, type: 3}
     line: {fileID: 3623110726292100459, guid: 5767ee8ccb79e4a4c825dcc3020ea2e4, type: 3}
-    lineStart: {x: -2, y: 0, z: -5}
-    lineEnd: {x: 2, y: 0, z: -5}
-    playerSpawnPosition: {x: -7.5, y: -0.5}
+    lineStart: {x: -7, y: 3, z: -5}
+    lineEnd: {x: -4, y: 3, z: -5}
+    playerSpawnPosition: {x: 0, y: 4}
     isCompleted: 0
-    isPlayable: 1
+    isPlayable: 0
+  - map: {fileID: 9039784050574142565, guid: 85e66c0633f289545b03c1c4569b69a8, type: 3}
+    line: {fileID: 2966188401529269688, guid: 729f5d719185d944396c717d2e030a3a, type: 3}
+    lineStart: {x: -7, y: 3, z: -5}
+    lineEnd: {x: -4, y: 3, z: -5}
+    playerSpawnPosition: {x: -7.5, y: -3.5}
+    isCompleted: 0
+    isPlayable: 0
+  - map: {fileID: 2406203958661141322, guid: 8593443d5eec09843b809ab2f93659dc, type: 3}
+    line: {fileID: 3623110726292100459, guid: 5767ee8ccb79e4a4c825dcc3020ea2e4, type: 3}
+    lineStart: {x: 2, y: -1.9, z: -5}
+    lineEnd: {x: 6, y: -1.9, z: -5}
+    playerSpawnPosition: {x: -7.15, y: -2.5}
+    isCompleted: 0
+    isPlayable: 0
+  - map: {fileID: 5842874171801894166, guid: 0433bc7d705da9b458579a784a1bad27, type: 3}
+    line: {fileID: 3623110726292100459, guid: 5767ee8ccb79e4a4c825dcc3020ea2e4, type: 3}
+    lineStart: {x: 3, y: -2.9, z: -5}
+    lineEnd: {x: -7, y: 3.5, z: -5}
+    playerSpawnPosition: {x: -7.15, y: 2.5}
+    isCompleted: 0
+    isPlayable: 0
+  - map: {fileID: 6067528937538907479, guid: 95343f4b7967bd24c91fac477d205104, type: 3}
+    line: {fileID: 3623110726292100459, guid: 5767ee8ccb79e4a4c825dcc3020ea2e4, type: 3}
+    lineStart: {x: -5, y: 3.5, z: -5}
+    lineEnd: {x: -3, y: 3.5, z: -5}
+    playerSpawnPosition: {x: -7.15, y: 2.5}
+    isCompleted: 0
+    isPlayable: 0
+  - map: {fileID: 8887825055794278459, guid: fbf0980388f82654dab4644cee85039d, type: 3}
+    line: {fileID: 2966188401529269688, guid: 729f5d719185d944396c717d2e030a3a, type: 3}
+    lineStart: {x: -2, y: 2, z: -5}
+    lineEnd: {x: 2, y: 2, z: -5}
+    playerSpawnPosition: {x: -7.15, y: 2.5}
+    isCompleted: 0
+    isPlayable: 0
+  - map: {fileID: 2969300258937952631, guid: caacf0046dd15a8428413e3e765e4598, type: 3}
+    line: {fileID: 2966188401529269688, guid: 729f5d719185d944396c717d2e030a3a, type: 3}
+    lineStart: {x: -5, y: 1, z: -5}
+    lineEnd: {x: -1, y: -2.72, z: -5}
+    playerSpawnPosition: {x: 7.5, y: -1.5}
+    isCompleted: 0
+    isPlayable: 0
+  - map: {fileID: 4353623546560522582, guid: d489768964326ec498ee43085769b0d4, type: 3}
+    line: {fileID: 2966188401529269688, guid: 729f5d719185d944396c717d2e030a3a, type: 3}
+    lineStart: {x: -5, y: 1.6, z: -5}
+    lineEnd: {x: 0, y: 1.6, z: -5}
+    playerSpawnPosition: {x: -6.5, y: 2.5}
+    isCompleted: 0
+    isPlayable: 0

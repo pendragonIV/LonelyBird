@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public PlayerData playerData;
 
-    Level currentLevelData;
+    public Level currentLevelData;
     #region Game status
     [SerializeField]
     private bool isGameWin = false;
@@ -65,6 +65,13 @@ public class GameManager : MonoBehaviour
         isGameWin = true;
 
         gameScene.ShowWinPanel();
+
+        LevelManager.instance.levelData.SetLevelData(LevelManager.instance.currentLevelIndex, true, true);
+
+        if (LevelManager.instance.currentLevelIndex < LevelManager.instance.levelData.GetLevels().Count - 1)
+        {
+            LevelManager.instance.levelData.SetLevelData(LevelManager.instance.currentLevelIndex + 1, true, false);
+        }
 
         playerData.AddGold(100);
 

@@ -78,6 +78,7 @@ public class LineController : MonoBehaviour
     {  
         lineRenderer.SetPosition(index, pointPosition);
         SetCollider(index);
+        edgeCollider2D.enabled = false;
     }
 
     private void SetCollider(int index)
@@ -99,6 +100,12 @@ public class LineController : MonoBehaviour
 
         attachingObjects[int.Parse(attachingObject.name)] = objectToAttack;
         objectToAttack.transform.position = new Vector3(objectToAttack.transform.position.x, objectToAttack.transform.position.y, -3);
+        
+    }
+
+    public void EnableCollider()
+    {
+        edgeCollider2D.enabled = true;
     }
 
     public void BackToPrevious(GameObject gameObject)
@@ -108,5 +115,33 @@ public class LineController : MonoBehaviour
             gameObject.transform.position = pointPositions[gameObject];
             SetPoint(int.Parse(gameObject.name), pointPositions[gameObject]);
         }
+    }
+
+    public void BackToDefault()
+    {
+        SetPoint(0, GameManager.instance.currentLevelData.lineStart);
+        SetPoint(1, GameManager.instance.currentLevelData.lineEnd);
+
+        List<Vector3> pos = new List<Vector3>();
+        pos.Add(GameManager.instance.currentLevelData.lineStart);
+        pos.Add(GameManager.instance.currentLevelData.lineEnd);
+
+        List<GameObject> objects = new List<GameObject>();
+
+        foreach(KeyValuePair<GameObject, Vector3> kvp in pointPositions)
+        {
+            objects.Add(kvp.Key);
+        }
+
+        foreach(GameObject obj in objects)
+        {
+            GameObject lastAttached = attachingObjects[int.Parse(obj.name)];
+            lastAttached.transform.position = new Vector3(lastAttached.transform.position.x, lastAttached.transform.position.y, -6);
+
+            obj.transform.position = pos[0];
+            pointPositions[obj] = pos[0];
+            pos.RemoveAt(0);
+        }
+
     }
 }

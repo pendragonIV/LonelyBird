@@ -34,6 +34,8 @@ public class Point : MonoBehaviour
         {
             LineController.instance.BackToPrevious(this.gameObject);
         }
+
+        LineController.instance.EnableCollider();
     }
 
 

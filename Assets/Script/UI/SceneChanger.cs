@@ -50,15 +50,15 @@ public class SceneChanger : MonoBehaviour
     public void ChangeToNextLevel()
     {
         StopAllCoroutines();
-        //if(LevelManager.instance.currentLevelIndex < LevelManager.instance.levelData.GetLevels().Count - 1)
-        //{
-        //    LevelManager.instance.currentLevelIndex++;
-        //    StartCoroutine(ChangeScene(GAME));
-        //}
-        //else
-        //{
-        //    StartCoroutine(ChangeScene(LEVEL_CHOOSE));
-        //}
+        if (LevelManager.instance.currentLevelIndex < LevelManager.instance.levelData.GetLevels().Count - 1)
+        {
+            LevelManager.instance.currentLevelIndex++;
+            StartCoroutine(ChangeScene(GAME));
+        }
+        else
+        {
+            StartCoroutine(ChangeScene(LEVEL_CHOOSE));
+        }
     }
 
 

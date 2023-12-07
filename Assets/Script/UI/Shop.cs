@@ -45,6 +45,7 @@ public class Shop : MonoBehaviour
     {
         ShopInitialize();
         currentCharacterIndex = playerData.GetCurrentMonsterIndex();
+        coinText.text = playerData.GetGold().ToString();
     }
 
     public void ShopInitialize()
@@ -115,6 +116,7 @@ public class Shop : MonoBehaviour
             SetBoughtStatus(currentCharacterIndex);
             playerData.SetCurrentMonsterIndex(currentCharacterIndex);
             playerData.SaveDataJSON();
+            coinText.text = playerData.GetGold().ToString();
         }
     }
 

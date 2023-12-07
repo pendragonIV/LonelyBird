@@ -20,6 +20,12 @@ public class PlayerController : MonoBehaviour
         moveDirection = value.Get<float>();
     }
 
+    private void OnReset(InputValue value)
+    {
+        LineController.instance.BackToDefault();
+    }
+
+
     private void Update()
     {
         currentVelocity = rb.velocity;
